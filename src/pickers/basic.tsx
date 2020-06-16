@@ -14,7 +14,7 @@ class DatePicker extends React.Component<BasicDatePickerProps> {
     }
 
     let newDate = date;
-    if (selectedDate && selectedDate.getTime() === date.getTime()) {
+    if (selectedDate && selectedDate.getTime && selectedDate.getTime() === date.getTime()) {
       newDate = null;
     }
 
